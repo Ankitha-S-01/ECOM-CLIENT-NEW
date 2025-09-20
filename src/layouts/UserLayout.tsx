@@ -13,12 +13,7 @@ const UserLayout = () => {
         if (user.role !== "USER") {
           navigate("/") 
         }
-      } catch (err) {
-        navigate("/") 
-      }
-    } else {
-      navigate("/") 
-    }
+      } 
   }, [navigate])
 
   return (
